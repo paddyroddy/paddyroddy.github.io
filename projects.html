@@ -1,0 +1,35 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<style type="text/css" media="screen">
+    h4 {
+        color: white;
+    }
+</style>
+
+<article class="projects column">
+    <div class="projects-content">
+        {% assign public_repos = site.data.github | sort: 'updated_at' | reverse %}
+        {% for repo in public_repos %}
+        {% if repo.fork == false %}
+        <h1>
+            <a href="{{ repo.html_url }}">
+                {{ repo.name }}
+            </a>
+        </h1>
+        <h4>
+            {{ repo.description }}
+        </h4>
+        {% if repo.language %}
+        {{ repo.language }}
+        {% endif %}
+        <i class="fas fa-star pl-md-2 " aria-hidden="true"></i> {{ repo.stargazers_count }}
+        <i class="fas fa-code-branch pl-md-2" aria-hidden="true"></i> {{ repo.forks_count }}
+        <br/><br/>
+        {% endif %}
+        {% endfor %}
+    </div>
+</article>
