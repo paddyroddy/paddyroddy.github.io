@@ -29,6 +29,8 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-redirect-from (0.14.0)
+      jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-seo-tag (2.5.0)
@@ -67,8 +69,9 @@ PLATFORMS
 DEPENDENCIES
   hash-joiner
   jekyll
+  jekyll-redirect-from
   jekyll-theme-hacker
   json
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
