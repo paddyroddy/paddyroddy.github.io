@@ -1,6 +1,6 @@
 theme: jekyll-theme-hacker
 plugins_dir: ./_plugins
 jekyll_get:
-    - data: github
-      json: 'https://api.github.com/users/paddyroddy/repos'
-      cache: false
+
+plugins:
+  - jekyll-redirect-from
