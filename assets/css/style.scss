@@ -1,0 +1,13 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+a, a:visited {
+    text-decoration: none;
+    color: #b5e853;
+}
+
+a:hover, a:focus {
+    color: forestgreen;
+}
