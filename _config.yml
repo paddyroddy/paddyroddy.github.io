@@ -2,9 +2,15 @@ title: Patrick Roddy
 email: patrickjamesroddy@gmail.com
 baseurl: ''
 url: 'https://paddyroddy.github.io'
-github_username: paddyroddy
 google_analytics: UA-131478582-1
 theme: jekyll-theme-hacker
+
+github_username: paddyroddy
+linkedin_username: patrickjamesroddy
+medium_username: patrickjamesroddy
+stackoverflow_username: paddyroddy
+twitter_username: paddy_roddy
+gravatar_hash: b991f7f475c334cc277869a709445d421
 
 plugins_dir: ./_plugins
 
