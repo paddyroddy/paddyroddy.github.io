@@ -1,5 +1,6 @@
 title: Patrick Roddy
 email: patrickjamesroddy@gmail.com
+description: ''
 baseurl: ''
 url: 'https://paddyroddy.github.io'
 google_analytics: UA-131478582-1
@@ -17,7 +18,7 @@ plugins_dir: ./_plugins
 jekyll_get:
   - data: github
     json: 'https://api.github.com/users/paddyroddy/repos'
-    cache: false
+    cache: true
 
 plugins:
   - jekyll-redirect-from
