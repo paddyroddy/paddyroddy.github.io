@@ -1,11 +1,26 @@
-require 'json'
-require 'hash-joiner'
-require 'open-uri'
+##
+# Download XML data from external sources
+# Convert data to JSON and optionally save it to cache
+#
+# @author Derek Smart<derek@grindaga.com>
+# @copyright 2018
+# @license MIT
 
-module Jekyll_Get
+require 'json'
+require 'rest-client'
+require 'active_support/core_ext/hash'
+
+module Jekyll_Xml_Source
   class Generator < Jekyll::Generator
     safe true
     priority :highest
+
+    def saveToCache(data_source, name, content)
+      path = "#{data_source}/#{name}.json"
+      File.open(path,"w") do |file|
+        file.write(content)
+      end
+    end
 
     def loadFromCache(data_source, name)
       path = "#{data_source}/#{name}.json"
@@ -18,38 +33,43 @@ module Jekyll_Get
     end
 
     def generate(site)
-      config = site.config['jekyll_get']
+      config = site.config['jekyll_xml']
       data_source = (site.config['data_source'] || '_data')
+
       if !config
         return
       end
-      if !config.kind_of?(Array)
-        config = [config]
-      end
-      config.each do |d|
-        if d['cache']
-          site.data[d['data']] = loadFromCache(data_source, d['data'])
+
+      config.each do |data|
+        if data['cache']
+          site.data[data['data']] = loadFromCache(data_source, data['data'])
         end
-        if site.data[d['data']].nil?
+
+        if site.data[data['data']].nil?
           begin
-            target = site.data[d['data']]
-            source = JSON.load(open(d['json']))
-            if target
-              HashJoiner.deep_merge target, source
+            result = RestClient::Request.execute method: :get, url: data['source'], user: ENV[data['auth_user']], password: ENV[data['auth_pass']]
+            if data['json']
+              site.data[data['data']] = result
             else
-              site.data[d['data']] = source
-            end
-            if d['cache']
-              path = "#{data_source}/#{d['data']}.json"
-              open(path, 'wb') do |file|
-                file << JSON.generate(site.data[d['data']])
-              end
+              site.data[data['data']] = JSON.load(Hash.from_xml(result).to_json)
             end
           rescue
             next
           end
+
+          if data['cache']
+            if data['json']
+              saveToCache(data_source, data['data'], result)
+            else
+              saveToCache(data_source, data['data'], Hash.from_xml(result).to_json)
+            end
+            site.data[data['data']] = loadFromCache(data_source, data['data'])
+          end
         end
+
       end
+
     end
+
   end
 end

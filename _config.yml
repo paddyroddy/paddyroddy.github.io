@@ -2,7 +2,7 @@ title: Patrick Roddy
 email: patrickjamesroddy@gmail.com
 description: ''
 baseurl: ''
-url: 'https://paddyroddy.github.io'
+url: https://paddyroddy.github.io
 google_analytics: UA-131478582-1
 theme: jekyll-theme-hacker
 
@@ -15,10 +15,13 @@ gravatar_hash: b991f7f475c334cc277869a709445d421
 
 plugins_dir: ./_plugins
 
-jekyll_get:
+jekyll_xml:
   - data: github
-    json: 'https://api.github.com/users/paddyroddy/repos'
-    cache: false
+    source: 'https://api.github.com/users/paddyroddy/repos?page=1&per_page=100'
+    json: true
+    cache: true
+    auth_user: GITHUB_USER
+    auth_pass: GITHUB_TOKEN
 
 plugins:
   - jekyll-redirect-from
