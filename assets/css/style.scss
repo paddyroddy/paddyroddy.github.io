@@ -3,6 +3,62 @@
 
 @import "{{ site.theme }}";
 
+/* header.html */
+
+.header {
+    margin: auto;
+    text-align: center;
+}
+
+/* footer.html */
+
+.icons-social i {
+    font-size: 3em;
+    padding: 10px;
+    color: #b5e853;
+}
+
+/* index.html */
+
+.intro {
+    text-align: center;
+}
+
+/* about.html */
+
+#left {
+    text-align: center
+}
+#right {
+    text-align: left
+}
+.profile-pic {
+    border-radius: 50%;
+}
+
+/* projects.html */
+
+.projects h4 {
+    color: white;
+}
+
+/* 404.html */
+
+.four-zero-four {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.four-zero-four h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+/* General */
+
 a, a:visited {
     text-decoration: none;
     color: #b5e853;
@@ -10,4 +66,12 @@ a, a:visited {
 
 a:hover, a:focus {
     color: forestgreen;
+}
+
+header {
+    border: none;
+}
+
+footer {
+    text-align: center;
 }
