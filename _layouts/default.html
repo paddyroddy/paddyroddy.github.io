@@ -1,25 +1,14 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-GB' }}">
+{% include header.html %}
 
-{% include head.html %}
+<main aria-label="Content">
+    <div>
+        <header class="{{ page.title }}-header">
+            <h1 class="{{ page.title  }}-title">
+                {{ page.title | escape }}
+            </h1>
+        </header>
+        {{ content }}
+    </div>
+</main>
 
-<body>
-
-    {% include header.html %}
-
-    <main class="full-width" aria-label="Content">
-        <div class="wrapper">
-            <header class="{{ page.title }}-header">
-                <h1 class="{{ page.title  }}-title">
-                    {{ page.title | escape }}
-                </h1>
-            </header>
-            {{ content }}
-        </div>
-    </main>
-
-    {% include footer.html %}
-
-</body>
-
-</html>
+{% include footer.html %}

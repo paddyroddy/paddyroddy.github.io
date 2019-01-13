@@ -4,14 +4,8 @@ title: Projects
 permalink: /projects/
 ---
 
-<style type="text/css" media="screen">
-    h4 {
-        color: white;
-    }
-</style>
-
-<article class="projects column">
-    <div class="projects-content">
+<article class="projects">
+    <div>
         {% assign public_repos = site.data.github | sort: 'updated_at' | reverse %}
         {% for repo in public_repos %}
         {% if repo.fork == false %}
@@ -28,7 +22,7 @@ permalink: /projects/
         {% endif %}
         <i class="fas fa-star pl-md-2 " aria-hidden="true"></i> {{ repo.stargazers_count }}
         <i class="fas fa-code-branch pl-md-2" aria-hidden="true"></i> {{ repo.forks_count }}
-        <br/><br/>
+        <br /><br />
         {% endif %}
         {% endfor %}
     </div>
