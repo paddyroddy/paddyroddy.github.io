@@ -22,3 +22,6 @@ jekyll_xml:
     cache: true
     auth_user: GITHUB_USER
     auth_pass: GITHUB_TOKEN
+
+plugins:
+    - jekyll-redirect-from
