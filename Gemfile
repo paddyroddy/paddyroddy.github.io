@@ -8,5 +8,4 @@ group :jekyll_plugins do
     gem "rest-client"
     gem "activesupport"
     gem 'jekyll-theme-hacker'
-    gem 'jekyll-redirect-from'
 end
