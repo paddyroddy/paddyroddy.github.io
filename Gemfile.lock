@@ -16,7 +16,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
-    ffi (1.10.0)
+    ffi (1.11.1)
     forwardable-extended (2.6.0)
     hash-joiner (0.0.7)
       safe_yaml
@@ -42,8 +42,8 @@ GEM
       jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
-    jekyll-seo-tag (2.6.0)
-      jekyll (~> 3.3)
+    jekyll-seo-tag (2.6.1)
+      jekyll (>= 3.3, < 5.0)
     jekyll-theme-hacker (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
@@ -64,7 +64,7 @@ GEM
     netrc (0.11.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (3.0.3)
+    public_suffix (3.1.0)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -72,7 +72,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rouge (3.3.0)
+    rouge (3.4.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
@@ -100,4 +100,4 @@ DEPENDENCIES
   rest-client
 
 BUNDLED WITH
-   2.0.1
+   2.0.2
