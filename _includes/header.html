@@ -1,47 +1,66 @@
 <html lang="{{ site.lang | default: 'en-GB' }}">
+    <head>
+        <!-- Metadata -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <!-- Icon -->
+        <link
+            rel="icon"
+            href="{{ '/assets/images/favicon.ico' | relative_url }}"
+            type="image/x-icon"
+        />
+        <!-- Custom CSS -->
+        <link
+            rel="stylesheet"
+            href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
+        />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+            crossorigin="anonymous"
+        />
+        <!-- Google Analytics -->
+        {% if jekyll.environment == 'production' and site.google_analytics %}
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "{{ site.google_analytics }}");
+        </script>
+        {% endif %}
+    </head>
 
-<head>
-    <!-- Metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Icon -->
-    <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-    <!-- Google Analytics -->
-    {% if jekyll.environment == 'production' and site.google_analytics %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-    </script>
-    {% endif %}
-</head>
-
-<body>
-    {% assign default_paths = site.pages | sort_natural | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
-    <header class="header">
-        <div>
-            <a rel="author" href="{{ '/' | relative_url }}">
-                Home
-            </a>
-            {% if page_paths %}
-            {% for path in page_paths %}
-            {% assign my_page = site.pages | where: "path", path | first %}
-            {% if my_page.title %}
-            {% if page.url == my_page.url %}
-            <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {% else %}
-            <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {% endif %}
-            {% endif %}
-            {% endfor %}
-            {% endif %}
-        </div>
-    </header>
+    <body>
+        {% assign default_paths = site.pages | sort_natural | map: "path" %} {%
+        assign page_paths = site.header_pages | default: default_paths %}
+        <header class="header">
+            <div>
+                <a rel="author" href="{{ '/' | relative_url }}">
+                    Home
+                </a>
+                {% if page_paths %} {% for path in page_paths %} {% assign
+                my_page = site.pages | where: "path", path | first %} {% if
+                my_page.title %} {% if page.url == my_page.url %}
+                <a href="{{ my_page.url | relative_url }}"
+                    >{{ my_page.title | escape }}</a
+                >
+                {% else %}
+                <a href="{{ my_page.url | relative_url }}"
+                    >{{ my_page.title | escape }}</a
+                >
+                {% endif %} {% endif %} {% endfor %} {% endif %}
+            </div>
+        </header>
+    </body>
+</html>

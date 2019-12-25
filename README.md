@@ -1,4 +1,3 @@
-Patrick Roddy
-=============
+# Patrick Roddy
 
-To run locally: `bundle install; bundle exec jekyll serve;`.
+To run locally: `bundle install; bundle exec jekyll serve;`
