@@ -24,6 +24,9 @@
             integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
             crossorigin="anonymous"
         />
+        <!-- particles.js -->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+        <script src="{{ '/assets/js/app.js' | relative_url }}"></script>
         <!-- Google Analytics -->
         {% if jekyll.environment == 'production' and site.google_analytics %}
         <script
@@ -61,6 +64,7 @@
                 >
                 {% endif %} {% endif %} {% endfor %} {% endif %}
             </div>
+            <div id="particles-js"></div>
         </header>
     </body>
 </html>

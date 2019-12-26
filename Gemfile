@@ -11,3 +11,7 @@ group :jekyll_plugins do
     gem 'rest-client'
     gem 'sassc'
 end
+
+source 'https://rails-assets.org' do
+    gem 'rails-assets-particles.js'
+end
