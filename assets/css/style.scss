@@ -74,6 +74,8 @@ a,
 a:visited {
     text-decoration: none;
     color: #b5e853;
+    position: relative;
+    z-index: 9999;
 }
 
 a:hover,
