@@ -67,6 +67,10 @@
 }
 
 @media only screen and (max-width: 40em) {
+    tr {
+        text-align: center;
+    }
+
     td {
         display: inline-block;
     }
