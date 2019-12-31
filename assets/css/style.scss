@@ -40,9 +40,11 @@
 #left {
     text-align: center;
 }
+
 #right {
     text-align: left;
 }
+
 .profile-pic {
     border-radius: 50%;
 }
@@ -62,6 +64,16 @@
 
 .four-zero-four h1 {
     font-size: 4em;
+}
+
+@media only screen and (max-width: 40em) {
+    td {
+        display: block;
+    }
+
+    tbody {
+        float: left;
+    }
 }
 
 /* General */
