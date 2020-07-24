@@ -27,6 +27,18 @@
         <!-- particles.js -->
         <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
         <script src="{{ '/assets/js/app.js' | relative_url }}"></script>
+        <!-- Arxiv -->
+        <script type="text/javascript">
+            var arxiv_authorid = "roddy_p_1";
+            var arxiv_format = "arxiv";
+            var arxiv_max_entries = 0;
+            var arxiv_includeTitle = 0;
+            var arxiv_includeSummary = 1;
+        </script>
+        <script
+            type="text/javascript"
+            src="https://arxiv.org/js/myarticles.js"
+        ></script>
         <!-- Google Analytics -->
         {% if jekyll.environment == 'production' and site.google_analytics %}
         <script
