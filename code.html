@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Projects
-permalink: /projects/
+title: Code
+permalink: /code/
 ---
 
-<article class="projects">
+<article class="code">
     <div>
         {% assign public_repos = site.data.github | sort: 'updated_at' | reverse
         %} {% for repo in public_repos %} {% if repo.fork == false %}
