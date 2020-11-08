@@ -30,4 +30,4 @@ jobs:
                   publish_dir: ./site
                   publish_branch: master
                   user_name: Deployment Bot
-                  email: deploy@travis-ci.org
+                  user_email: deploy@travis-ci.org
