@@ -1,5 +1,5 @@
 # Patrick Roddy
 
-[![Build Status](https://travis-ci.com/paddyroddy/paddyroddy.github.io.svg?branch=release)](https://travis-ci.com/paddyroddy/paddyroddy.github.io)
+![Build and Deploy](https://github.com/paddyroddy/paddyroddy.github.io/workflows/Build%20and%20Deploy/badge.svg)
 
 To run locally: `bundle install; bundle exec jekyll serve;`
