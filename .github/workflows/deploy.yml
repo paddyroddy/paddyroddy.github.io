@@ -1,5 +1,7 @@
 name: Build and Deploy
 on:
+    schedule:
+        - 0 12 * * *
     push:
         branches:
             - release
