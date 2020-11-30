@@ -30,6 +30,6 @@ jobs:
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_dir: ./site
-                  publish_branch: master
+                  publish_branch: main
                   user_name: Deployment Bot
                   user_email: deploy@travis-ci.org
