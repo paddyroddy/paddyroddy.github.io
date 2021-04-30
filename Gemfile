@@ -10,4 +10,6 @@ group :jekyll_plugins do
     gem 'json'
     gem 'rest-client'
     gem 'sassc'
+    gem 'webrick'
 end
+
