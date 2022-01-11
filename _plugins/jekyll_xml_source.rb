@@ -8,7 +8,7 @@
 
 require 'json'
 require 'rest-client'
-require 'active_support/core_ext/hash'
+require 'active_support'
 
 module Jekyll_Xml_Source
   class Generator < Jekyll::Generator
