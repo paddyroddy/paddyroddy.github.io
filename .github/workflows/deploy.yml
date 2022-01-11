@@ -1,35 +1,35 @@
 name: deploy
 on:
-    push:
-        branches:
-            - release
-    pull_request:
-        branches:
-            - release
-    schedule:
-        - cron: "0 12 * * *"
+  push:
+    branches:
+      - release
+  pull_request:
+    branches:
+      - release
+  schedule:
+    - cron: "0 12 * * *"
 jobs:
-    build-and-deploy:
-        runs-on: ubuntu-latest
-        steps:
-            - name: checkout source
-              uses: actions/checkout@v2
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout source
+        uses: actions/checkout@v2
 
-            - name: Set up Ruby
-              uses: ruby/setup-ruby@v1
-              with:
-                  ruby-version: 3.1
-                  bundler-cache: true
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+          bundler-cache: true
 
-            - name: Install and Build
-              run: |
-                  JEKYLL_ENV=production bundle exec jekyll build --destination site
+      - name: Install and Build
+        run: |
+          JEKYLL_ENV=production bundle exec jekyll build --destination site
 
-            - name: Deploy
-              uses: peaceiris/actions-gh-pages@v3
-              with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: ./site
-                  publish_branch: main
-                  user_name: 'github-actions[bot]'
-                  user_email: 'github-actions[bot]@users.noreply.github.com'
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: main
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"

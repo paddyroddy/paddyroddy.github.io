@@ -1,14 +1,12 @@
 {% include header.html %}
 
 <main aria-label="Content">
-    <div>
-        <header class="{{ page.title }}-header">
-            <h1 class="{{ page.title  }}-title">
-                {{ page.title | escape }}
-            </h1>
-        </header>
-        {{ content }}
-    </div>
+  <div>
+    <header class="{{ page.title }}-header">
+      <h1 class="{{ page.title  }}-title">{{ page.title | escape }}</h1>
+    </header>
+    {{ content }}
+  </div>
 </main>
 
 {% include footer.html %}

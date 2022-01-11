@@ -12,4 +12,3 @@ group :jekyll_plugins do
     gem 'sassc'
     gem 'webrick'
 end
-
