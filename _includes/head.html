@@ -22,7 +22,9 @@
       "ga"
     );
 
-    ga("create", "{{ site.google_analytics | cgi_escape | escape }}", "auto");
+    ga("create", "{{ site.google_analytics | cgi_escape | escape }}", {
+      cookieFlags: "SameSite=None; Secure",
+    });
     ga("send", "pageview");
   </script>
   {% endif %}
