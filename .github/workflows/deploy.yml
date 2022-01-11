@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: deploy
 on:
     push:
         branches:
@@ -31,5 +31,5 @@ jobs:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_dir: ./site
                   publish_branch: main
-                  user_name: Deployment Bot
-                  user_email: deploy@travis-ci.org
+                  user_name: 'github-actions[bot]'
+                  user_email: 'github-actions[bot]@users.noreply.github.com'
