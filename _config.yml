@@ -7,11 +7,10 @@ google_analytics: UA-131478582-1
 theme: jekyll-theme-hacker
 
 github_username: paddyroddy
-linkedin_username: patrickjamesroddy
-medium_username: patrickjamesroddy
-stackoverflow_username: paddyroddy
-twitter_username: paddy_roddy
+google_scholar_id: OFigHUwAAAAJ
 gravatar_hash: b991f7f475c334cc277869a709445d421
+linkedin_username: patrickjamesroddy
+twitter_username: paddy_roddy
 
 plugins_dir: ./_plugins
 
