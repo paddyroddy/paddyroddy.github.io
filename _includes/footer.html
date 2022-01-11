@@ -1,35 +1,31 @@
-<html lang="{{ site.lang | default: 'en-GB' }}">
-  <body>
-    <footer>
-      <div>
-        <div class="icons-social">
-          {% if site.github_username %}
-          <a
-            target="_blank"
-            href="https://github.com/{{ site.github_username | cgi_escape | escape }}"
-            ><i class="fab fa-github"></i
-          ></a>
-          {% endif %} {% if site.google_scholar_id %}
-          <a
-            target="_blank"
-            href="https://scholar.google.com/citations?user={{ site.google_scholar_id | cgi_escape | escape }}"
-            ><i class="ai ai-google-scholar"></i
-          ></a>
-          {% endif %} {% if site.linkedin_username %}
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          {% endif %} {% if site.twitter_username %}
-          <a
-            target="_blank"
-            href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          {% endif %}
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+<footer>
+  <div>
+    <div class="icons-social">
+      {% if site.github_username %}
+      <a
+        target="_blank"
+        href="https://github.com/{{ site.github_username | cgi_escape | escape }}"
+        ><i class="fab fa-github"></i
+      ></a>
+      {% endif %} {% if site.google_scholar_id %}
+      <a
+        target="_blank"
+        href="https://scholar.google.com/citations?user={{ site.google_scholar_id | cgi_escape | escape }}"
+        ><i class="ai ai-google-scholar"></i
+      ></a>
+      {% endif %} {% if site.linkedin_username %}
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      {% endif %} {% if site.twitter_username %}
+      <a
+        target="_blank"
+        href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}"
+        ><i class="fab fa-twitter"></i
+      ></a>
+      {% endif %}
+    </div>
+  </div>
+</footer>
