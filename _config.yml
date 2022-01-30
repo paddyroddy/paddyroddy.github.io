@@ -12,8 +12,6 @@ gravatar_hash: b991f7f475c334cc277869a709445d421
 linkedin_username: patrickjamesroddy
 twitter_username: paddy_roddy
 
-plugins_dir: ./_plugins
-
 jekyll_xml:
   - data: github
     source: "https://api.github.com/users/paddyroddy/repos?page=1&per_page=100"
