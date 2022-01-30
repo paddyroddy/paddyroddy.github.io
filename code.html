@@ -9,7 +9,7 @@ permalink: /code/
     {% assign public_repos = site.data.github | sort: 'updated_at' | reverse %}
     {% for repo in public_repos %} {% if repo.fork == false %}
     <h1>
-      <a href="{{ repo.html_url }}"> {{ repo.name }} </a>
+      <a href="{{ repo.html_url }}" target="_blank"> {{ repo.name }} </a>
     </h1>
     <h4>{{ repo.description }}</h4>
     {% if repo.language %} {{ repo.language }} {% endif %}
