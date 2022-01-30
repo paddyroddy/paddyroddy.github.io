@@ -4,10 +4,9 @@ gem 'jekyll'
 
 group :jekyll_plugins do
     gem 'activesupport'
+    gem 'github-pages'
     gem 'hash-joiner'
     gem 'jekyll-redirect-from'
-    gem 'jekyll-remote-theme'
-    gem 'jekyll-seo-tag'
     gem 'json'
     gem 'rest-client'
     gem 'sassc'
