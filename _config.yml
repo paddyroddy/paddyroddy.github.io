@@ -1,4 +1,6 @@
-description: ""
+description: >
+  I am a PhD student at University College London
+  working in the field of astroinformatics.
 email: patrickjamesroddy@gmail.com
 google_analytics: UA-131478582-1
 remote_theme: pages-themes/hacker
@@ -17,7 +19,7 @@ jekyll_xml:
     cache: true
     data: github
     json: true
-    source: "https://api.github.com/users/paddyroddy/repos?page=1&per_page=100"
+    source: https://api.github.com/users/paddyroddy/repos?page=1&per_page=100
 
 plugins:
   - jekyll-redirect-from
