@@ -1,7 +1,2 @@
 _site
-!particles.json
 .jekyll-cache
-.jekyll-metadata
-.sass-cache
-.vscode
-*.json
