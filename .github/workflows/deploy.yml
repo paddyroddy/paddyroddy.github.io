@@ -22,8 +22,10 @@ jobs:
           bundler-cache: true
 
       - name: Install and Build
-        run: |
-          JEKYLL_ENV=production bundle exec jekyll build --destination site
+        run: >
+          JEKYLL_GITHUB_TOKEN=${{secrets.JEKYLL_GITHUB_TOKEN}}
+          JEKYLL_ENV=production
+          bundle exec jekyll build --destination site
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
