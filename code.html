@@ -6,8 +6,8 @@ permalink: /code/
 
 <article class="code">
   <div>
-    {% assign public_repos = site.data.github | sort: 'updated_at' | reverse %}
-    {% for repo in public_repos %}
+    {% assign public_repos = site.data.code | sort: 'updated_at' | reverse %} {%
+    for repo in public_repos %}
     <h1>
       <a href="{{ repo.html_url }}" target="_blank"> {{ repo.name }} </a>
     </h1>
