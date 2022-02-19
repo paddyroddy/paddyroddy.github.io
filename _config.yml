@@ -1,9 +1,9 @@
-title: Patrick Roddy
-email: patrickjamesroddy@gmail.com
 description: ""
-url: https://paddyroddy.github.io
+email: patrickjamesroddy@gmail.com
 google_analytics: UA-131478582-1
 remote_theme: pages-themes/hacker
+title: Patrick Roddy
+url: https://paddyroddy.github.io
 
 github_username: paddyroddy
 google_scholar_id: OFigHUwAAAAJ
@@ -12,12 +12,12 @@ linkedin_username: patrickjamesroddy
 twitter_username: paddy_roddy
 
 jekyll_xml:
-  - data: github
-    source: "https://api.github.com/users/paddyroddy/repos?page=1&per_page=100"
-    json: true
-    cache: true
-    auth_user: GITHUB_USER
+  - auth_user: GITHUB_USER
     auth_pass: GITHUB_TOKEN
+    cache: true
+    data: github
+    json: true
+    source: "https://api.github.com/users/paddyroddy/repos?page=1&per_page=100"
 
 plugins:
   - jekyll-redirect-from
