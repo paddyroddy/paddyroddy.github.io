@@ -6,8 +6,6 @@ on:
   pull_request:
     branches:
       - release
-  schedule:
-    - cron: "0 12 * * *"
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
