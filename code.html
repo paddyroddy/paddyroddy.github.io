@@ -7,7 +7,7 @@ permalink: /code/
 <article class="code">
   <div>
     {% assign public_repos = site.github.public_repositories | sort: 'pushed_at'
-    | reverse %} {% for repo in public_repos %}
+    | reverse %} {% for repo in public_repos %} {% if repo.fork == false %}
     <h1>
       <a href="{{ repo.html_url }}" target="_blank"> {{ repo.name }} </a>
     </h1>
@@ -17,6 +17,6 @@ permalink: /code/
     repo.stargazers_count }}
     <i class="fas fa-code-branch pl-md-2" aria-hidden="true"></i>{{
     repo.forks_count }} <br /><br />
-    {% endfor %}
+    {% endif %} {% endfor %}
   </div>
 </article>
