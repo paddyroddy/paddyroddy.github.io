@@ -12,10 +12,8 @@
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-    gtag("config", "{{ site.google_measurement | cgi_escape | escape }}", {
-      cookie_domain: "{{ site.url | cgi_escape | escape }}",
-      cookie_flags: "SameSite=None;Secure",
-    });
+    gtag("set", { cookie_flags: "SameSite=None;Secure" });
+    gtag("config", "{{ site.google_measurement | cgi_escape | escape }}");
   </script>
   {% endif %}
   <!-- Metadata -->
