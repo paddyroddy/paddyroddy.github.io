@@ -12,7 +12,9 @@
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-    gtag("config", "{{ site.google_measurement | cgi_escape | escape }}");
+    gtag("config", "{{ site.google_measurement | cgi_escape | escape }}", {
+      cookie_flags: "secure;samesite=none",
+    });
   </script>
   {% endif %}
   <!-- Metadata -->
