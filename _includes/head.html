@@ -13,7 +13,7 @@
     }
     gtag("js", new Date());
     gtag("config", "{{ site.google_measurement | cgi_escape | escape }}", {
-      cookie_flags: "secure;samesite=none",
+      cookie_flags: "SameSite=None;Secure",
     });
   </script>
   {% endif %}
