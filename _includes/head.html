@@ -12,8 +12,9 @@
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-    gtag("set", { cookie_flags: "SameSite=None;Secure" });
-    gtag("config", "{{ site.google_measurement | cgi_escape | escape }}");
+    gtag("config", "{{ site.google_measurement | cgi_escape | escape }}", {
+      cookie_flags: "SameSite=None;Secure",
+    });
   </script>
   {% endif %}
   <!-- Metadata -->
