@@ -6,86 +6,86 @@
 /* header.html */
 
 .header {
-    margin: auto;
-    text-align: center;
+  margin: auto;
+  text-align: center;
 }
 
 /* footer.html */
 
 .icons-social i {
-    font-size: 3em;
-    padding: 10px;
-    color: #b5e853;
+  font-size: 3em;
+  padding: 10px;
+  color: #b5e853;
 }
 
 /* index.html */
 
 .intro {
-    text-align: center;
-    margin: 10% 0 0 0;
+  text-align: center;
+  margin: 10% 0 0 0;
 }
 
 /* about.html */
 
 #left {
-    text-align: center;
+  text-align: center;
 }
 
 #right {
-    text-align: left;
+  text-align: left;
 }
 
 .profile-pic {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 /* code.html */
 
 .code h4 {
-    color: white;
+  color: white;
 }
 
 /* 404.html */
 
 .four-zero-four {
-    margin: 7.5% 0 0 0;
-    text-align: center;
+  margin: 7.5% 0 0 0;
+  text-align: center;
 }
 
 .four-zero-four h1 {
-    font-size: 4em;
+  font-size: 4em;
 }
 
 @media only screen and (max-width: 40em) {
-    tr {
-        text-align: center;
-    }
+  tr {
+    text-align: center;
+  }
 
-    td {
-        display: inline-block;
-    }
+  td {
+    display: inline-block;
+  }
 }
 
 /* General */
 
 a,
 a:visited {
-    text-decoration: none;
-    color: #b5e853;
-    position: relative;
-    z-index: 9999;
+  text-decoration: none;
+  color: #b5e853;
+  position: relative;
+  z-index: 9999;
 }
 
 a:hover,
 a:focus {
-    color: forestgreen;
+  color: forestgreen;
 }
 
 header {
-    border: none;
-    background: none;
+  border: none;
+  background: none;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
