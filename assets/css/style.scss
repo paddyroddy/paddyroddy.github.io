@@ -3,6 +3,36 @@
 
 @import "{{ site.theme }}";
 
+a,
+a:visited {
+  text-decoration: none;
+  color: #b5e853;
+  position: relative;
+  z-index: 9999;
+}
+
+a:hover,
+a:focus {
+  color: forestgreen;
+}
+
+header {
+  border: none;
+  background: none;
+}
+
+header h1 {
+  margin: 0 0 0 0;
+}
+
+header h1:before {
+  content: "";
+}
+
+footer {
+  text-align: center;
+}
+
 /* header.html */
 
 .header {
@@ -64,28 +94,4 @@
   td {
     display: inline-block;
   }
-}
-
-/* General */
-
-a,
-a:visited {
-  text-decoration: none;
-  color: #b5e853;
-  position: relative;
-  z-index: 9999;
-}
-
-a:hover,
-a:focus {
-  color: forestgreen;
-}
-
-header {
-  border: none;
-  background: none;
-}
-
-footer {
-  text-align: center;
 }
