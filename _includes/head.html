@@ -43,7 +43,7 @@
     var arxiv_includeSummary = 1;
   </script>
   <!-- Google Analytics -->
-  {% if jekyll.environment == 'production' and site.google_measurement %}
+  {% if jekyll.environment == 'production' %}
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id={{ site.google_measurement | cgi_escape | escape }}"
