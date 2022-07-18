@@ -19,6 +19,7 @@ repos:
     rev: v2.7.1
     hooks:
       - id: prettier
+        exclude: app.js
 
   - repo: https://github.com/sirosen/check-jsonschema
     rev: 0.17.0

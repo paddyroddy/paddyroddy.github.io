@@ -1,5 +1,8 @@
+---
+---
+
 tsParticles
-  .loadJSON("tsparticles", "/assets/json/particles.json")
+  .loadJSON("tsparticles", "{{ '/assets/json/particles.json' | relative_url }}")
   .then((container) => {
     console.log("callback - tsparticles config loaded");
   })
