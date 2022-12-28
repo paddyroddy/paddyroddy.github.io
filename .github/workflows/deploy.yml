@@ -18,7 +18,7 @@ jobs:
 
       - name: Install and Build
         run: >
-          JEKYLL_GITHUB_TOKEN=${{ secrets.JEKYLL_GITHUB_TOKEN }}
+          JEKYLL_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
           JEKYLL_ENV=production
           bundle exec jekyll build --destination site
 
