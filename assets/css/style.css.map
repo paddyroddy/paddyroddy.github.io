@@ -3,10 +3,10 @@
 	"file": "style.css",
 	"sources": [
 		"style.scss",
-		"../../../../../tmp/jekyll-remote-theme-20221228-1779-rsiwp3/_sass/hacker.scss",
-		"../../../../../tmp/jekyll-remote-theme-20221228-1779-rsiwp3/_sass/jekyll-theme-hacker.scss",
-		"../../../../../tmp/jekyll-remote-theme-20221228-1779-rsiwp3/_sass/rouge-base16-dark.scss",
-		"../../../../../tmp/jekyll-remote-theme-20221228-1779-rsiwp3/_sass/_default_colors.scss"
+		"../../../../../tmp/jekyll-remote-theme-20221228-1742-u6edae/_sass/hacker.scss",
+		"../../../../../tmp/jekyll-remote-theme-20221228-1742-u6edae/_sass/jekyll-theme-hacker.scss",
+		"../../../../../tmp/jekyll-remote-theme-20221228-1742-u6edae/_sass/rouge-base16-dark.scss",
+		"../../../../../tmp/jekyll-remote-theme-20221228-1742-u6edae/_sass/_default_colors.scss"
 	],
 	"sourcesContent": [
 		"@import \"hacker\";\n\na,\na:visited {\n  text-decoration: none;\n  color: #b5e853;\n  position: relative;\n  z-index: 9999;\n}\n\na:hover,\na:focus {\n  color: forestgreen;\n}\n\nheader {\n  border: none;\n  background: none;\n}\n\nheader h1 {\n  margin: 0 0 0 0;\n}\n\nheader h1:before {\n  content: \"\";\n}\n\nfooter {\n  text-align: center;\n}\n\n/* header.html */\n\n.header {\n  margin: auto;\n  text-align: center;\n}\n\n/* footer.html */\n\n.icons-social i {\n  font-size: 3em;\n  padding: 10px;\n  color: #b5e853;\n}\n\n/* index.html */\n\n.intro {\n  text-align: center;\n  margin: 15% 0 0 0;\n}\n\n/* about.html */\n\n#left {\n  text-align: center;\n}\n\n#right {\n  text-align: left;\n}\n\n.profile-pic {\n  border-radius: 50%;\n}\n\n/* code.html */\n\n.code h4 {\n  color: white;\n}\n\n/* 404.html */\n\n.four-zero-four {\n  margin: 7.5% 0 0 0;\n  text-align: center;\n}\n\n.four-zero-four h1 {\n  font-size: 4em;\n}\n\n@media only screen and (max-width: 40em) {\n  tr {\n    text-align: center;\n  }\n\n  td {\n    display: inline-block;\n  }\n}\n",
