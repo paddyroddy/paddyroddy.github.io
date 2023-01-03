@@ -16,6 +16,10 @@ a:focus {
   color: forestgreen;
 }
 
+b {
+  color: #b5e853;
+}
+
 header {
   border: none;
   background: none;
@@ -31,6 +35,16 @@ header h1:before {
 
 footer {
   text-align: center;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
 }
 
 /* header.html */
