@@ -1,5 +1,5 @@
 <header class="header">
-  {% assign default_paths = site.pages | sort: 'title' | map: "path" %} {%
+  {% assign default_paths = site.pages | sort: "title" | map: "path" %} {%
   assign page_paths = site.header_pages | default: default_paths %}
   <div>
     <a rel="author" href="{{ '/' | relative_url }}"> Home </a>
