@@ -394,6 +394,11 @@ ul li {
   color: white;
 }
 
+/* running.html */
+.running-pic {
+  width: 50%;
+}
+
 /* 404.html */
 .four-zero-four {
   margin: 7.5% 0 0 0;
