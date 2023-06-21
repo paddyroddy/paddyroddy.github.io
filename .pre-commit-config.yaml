@@ -20,6 +20,9 @@ repos:
     hooks:
       - id: prettier
         exclude: app.js
+        additional_dependencies:
+          - prettier@2.8.8
+          - "@shopify/prettier-plugin-liquid@1.1.0"
 
   - repo: https://github.com/sirosen/check-jsonschema
     rev: 0.23.2
