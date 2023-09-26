@@ -1,8 +1,10 @@
 name: deploy
 on:
-  workflow_dispatch:
   push:
-    branches: main
+    branches:
+      - main
+      - "renovate/**"
+  pull_request:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
