@@ -16,7 +16,7 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v3.0.0
+    rev: v3.0.3
     hooks:
       - id: prettier
         exclude: app.js
@@ -25,6 +25,6 @@ repos:
           - "@shopify/prettier-plugin-liquid@1.1.0"
 
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 0.23.3
+    rev: 0.26.3
     hooks:
       - id: check-github-actions
