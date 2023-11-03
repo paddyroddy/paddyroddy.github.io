@@ -15,4 +15,3 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           ruby-version: "3.2"
-  
