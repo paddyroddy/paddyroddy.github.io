@@ -23,6 +23,6 @@ repos:
           - prettier
           - "@shopify/prettier-plugin-liquid"
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 0.27.0
+    rev: 0.27.1
     hooks:
       - id: check-github-actions
