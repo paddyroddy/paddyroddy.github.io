@@ -13,7 +13,7 @@ jobs:
       BUNDLE_GEMFILE: ${{ github.workspace }}/Gemfile
     runs-on: ubuntu-latest
     steps:
-      - uses: paddyroddy/.github/actions/ruby/jekyll@eea6cf6f306395b05fbd2784abc96f9340a6769f # v0
+      - uses: paddyroddy/.github/actions/ruby/jekyll@52144c429ad50a5d9b8d06afa250dd3ee9500627 # v0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           ruby-version: "3.2"
