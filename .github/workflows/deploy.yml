@@ -11,7 +11,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: paddyroddy/.github/actions/ruby/jekyll@e8328be8ba4a2d94e7ae9a9107c527be18de3073 # v0
+      - uses: paddyroddy/.github/actions/ruby/jekyll@493daf3709e5e5301bba4b710cca8618c8c2883d # v0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           ruby-version: "3.2"
