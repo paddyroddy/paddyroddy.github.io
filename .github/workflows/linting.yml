@@ -11,6 +11,6 @@ jobs:
   linting:
     runs-on: ubuntu-latest
     steps:
-      - uses: paddyroddy/.github/actions/linting@a5fa225f79b16f86bd36bbaf64d0efa9b5f6a78a # v0
+      - uses: paddyroddy/.github/actions/linting@e8328be8ba4a2d94e7ae9a9107c527be18de3073 # v0
         with:
           pre-commit-config: ./.pre-commit-config.yaml
