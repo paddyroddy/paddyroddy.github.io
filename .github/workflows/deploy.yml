@@ -9,9 +9,11 @@ on:
 
 jobs:
   build-and-deploy:
+    env:
+      BUNDLE_GEMFILE: ${{ github.workspace }}/Gemfile
     runs-on: ubuntu-latest
     steps:
-      - uses: paddyroddy/.github/actions/ruby/jekyll@a5fa225f79b16f86bd36bbaf64d0efa9b5f6a78a # v0
+      - uses: paddyroddy/.github/actions/ruby/jekyll@18cf99c18726ca38bbf54303c78daf0906a2d5bf # v0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           ruby-version: "3.2"
