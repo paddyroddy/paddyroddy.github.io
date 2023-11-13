@@ -1,6 +1,6 @@
 # site info
 baseurl: ""
-description: >
+description: >-
   I am a Research Software Developer at the Advanced
   Research Computing Centre, University College London.
 email: patrickjamesroddy@gmail.com
@@ -23,3 +23,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll-redirect-from
   - jekyll-remote-theme
+
+# disable redirects.json
+redirect_from:
+  json: false
