@@ -18,12 +18,6 @@ gravatar_hash: b991f7f475c334cc277869a709445d42
 linkedin_username: patrickjamesroddy
 strava_user: patrick_roddy
 
-# external plugins
-plugins:
-  - jekyll-github-metadata
-  - jekyll-redirect-from
-  - jekyll-remote-theme
-
 # disable redirects.json
 redirect_from:
   json: false
