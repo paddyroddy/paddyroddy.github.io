@@ -1,2 +1,4 @@
-[codespell]
-skip = *.lock
+[files]
+extend-exclude = [
+    "*.lock"
+]
