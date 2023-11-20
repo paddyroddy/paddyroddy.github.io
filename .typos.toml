@@ -1,4 +1,4 @@
 [files]
 extend-exclude = [
-    "*.lock"
+    "*.lock",
 ]
