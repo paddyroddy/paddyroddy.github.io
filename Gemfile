@@ -1,12 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'jekyll', '~>4'
 
 group :jekyll_plugins do
-    gem 'faraday-retry'
-    gem 'jekyll-github-metadata'
-    gem 'jekyll-redirect-from'
-    gem 'jekyll-remote-theme'
-    gem 'jekyll-seo-tag'
-    gem 'webrick'
+    gem 'faraday-retry','~>2'
+    gem 'jekyll-github-metadata', '~>2'
+    gem 'jekyll-redirect-from', '~>0'
+    gem 'jekyll-remote-theme', '~>0'
+    gem 'jekyll-seo-tag', '~>2'
 end
