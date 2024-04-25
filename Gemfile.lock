@@ -13,11 +13,19 @@ GEM
       faraday-net_http (>= 2.0, < 3.2)
     faraday-net_http (3.1.0)
       net-http
-    faraday-retry (2.2.0)
+    faraday-retry (2.2.1)
       faraday (~> 2.0)
     ffi (1.16.3)
     forwardable-extended (2.6.0)
+    google-protobuf (4.26.1)
+      rake (>= 13)
+    google-protobuf (4.26.1-aarch64-linux)
+      rake (>= 13)
     google-protobuf (4.26.1-arm64-darwin)
+      rake (>= 13)
+    google-protobuf (4.26.1-x86-linux)
+      rake (>= 13)
+    google-protobuf (4.26.1-x86_64-darwin)
       rake (>= 13)
     google-protobuf (4.26.1-x86_64-linux)
       rake (>= 13)
@@ -72,8 +80,8 @@ GEM
       sawyer (~> 0.9)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (5.0.4)
-    rake (13.1.0)
+    public_suffix (5.0.5)
+    rake (13.2.1)
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -81,9 +89,50 @@ GEM
     rouge (4.2.1)
     rubyzip (2.3.2)
     safe_yaml (1.0.5)
-    sass-embedded (1.72.0-arm64-darwin)
+    sass-embedded (1.75.0)
       google-protobuf (>= 3.25, < 5.0)
-    sass-embedded (1.72.0-x86_64-linux-gnu)
+      rake (>= 13.0.0)
+    sass-embedded (1.75.0-aarch64-linux-android)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-aarch64-linux-gnu)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-aarch64-linux-musl)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-aarch64-mingw-ucrt)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-arm-linux-androideabi)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-arm-linux-gnueabihf)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-arm-linux-musleabihf)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-arm64-darwin)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-riscv64-linux-android)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-riscv64-linux-gnu)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-riscv64-linux-musl)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-x86-cygwin)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-x86-linux-android)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-x86-linux-gnu)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-x86-linux-musl)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-x86-mingw-ucrt)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-x86_64-cygwin)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-x86_64-darwin)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-x86_64-linux-android)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-x86_64-linux-gnu)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.75.0-x86_64-linux-musl)
       google-protobuf (>= 3.25, < 5.0)
     sawyer (0.9.2)
       addressable (>= 2.3.5)
@@ -95,17 +144,39 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
+  aarch64-linux
+  aarch64-linux-android
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  aarch64-mingw-ucrt
+  arm-linux-androideabi
+  arm-linux-gnueabihf
+  arm-linux-musleabihf
   arm64-darwin
+  riscv64-linux-android
+  riscv64-linux-gnu
+  riscv64-linux-musl
+  ruby
+  x86-cygwin
+  x86-linux
+  x86-linux-android
+  x86-linux-gnu
+  x86-linux-musl
+  x86-mingw-ucrt
+  x86_64-cygwin
+  x86_64-darwin
   x86_64-linux
+  x86_64-linux-android
+  x86_64-linux-gnu
+  x86_64-linux-musl
 
 DEPENDENCIES
-  faraday-retry
-  jekyll
-  jekyll-github-metadata
-  jekyll-redirect-from
-  jekyll-remote-theme
-  jekyll-seo-tag
-  webrick
+  faraday-retry (~> 2)
+  jekyll (~> 4)
+  jekyll-github-metadata (~> 2)
+  jekyll-redirect-from (~> 0)
+  jekyll-remote-theme (~> 0)
+  jekyll-seo-tag (~> 2)
 
 BUNDLED WITH
-   2.5.5
+   2.5.9
