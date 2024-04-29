@@ -6,4 +6,4 @@
 
 ## Deployment
 
-To run locally: `./_scripts/deploy.sh`
+To run locally: `./_deploy.sh`
