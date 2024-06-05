@@ -192,13 +192,12 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  faraday-retry
-  jekyll
-  jekyll-github-metadata
-  jekyll-redirect-from
-  jekyll-remote-theme
-  jekyll-seo-tag
-  webrick
+  faraday-retry (~> 2)
+  jekyll (~> 4)
+  jekyll-github-metadata (~> 2)
+  jekyll-redirect-from (~> 0)
+  jekyll-remote-theme (~> 0)
+  jekyll-seo-tag (~> 2)
 
 BUNDLED WITH
    2.5.11

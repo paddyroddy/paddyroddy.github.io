@@ -1,5 +1,5 @@
 ---
-name: deploy
+name: Links
 
 on:
   push:
@@ -9,13 +9,11 @@ on:
   pull_request:
 
 jobs:
-  build-and-deploy:
-    env:
-      BUNDLE_GEMFILE: ${{ github.workspace }}/Gemfile
+  links:
     runs-on: ubuntu-latest
+    timeout-minutes: 2
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/github-pages/jekyll@69431c4ec1e375c5fe5f8fa96ae1e05f371d8326 # v0
+      - uses: paddyroddy/.github/actions/links@69431c4ec1e375c5fe5f8fa96ae1e05f371d8326 # v0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          ruby-version: "3.3"
