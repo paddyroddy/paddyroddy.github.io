@@ -54,8 +54,15 @@ redirect_from: /About
           learning. In particular, we developed a novel wavelet basis designed
           for the analysis of incomplete data on manifolds, namely the sphere.
         </p>
-        <h4>Contact Details</h4>
-        <p>patrickjamesroddy (at) gmail (dot) com</p>
+        <p>
+          Contact:
+          <a
+            href="mailto:{{ site.email | replace: ' (at) ', '@' | replace: ' (dot) ', '.' }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa fa-fw fa-envelope"></i> {{ site.email }}</a
+          >
+        </p>
       </td>
     </tr>
   </tbody>
