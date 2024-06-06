@@ -58,6 +58,5 @@
     gtag("set", { cookie_flags: "SameSite=None;Secure" });
     gtag("config", "{{ site.google_measurement | cgi_escape | escape }}");
   </script>
-  {% endif %}
-  {% seo %}
+  {% endif %} {% seo %}
 </head>
