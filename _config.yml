@@ -23,6 +23,12 @@ strava_user: patrick_roddy
 redirect_from:
   json: false
 
+# pages to open in new tab
+new_tab_pages:
+  - CV
+  - PhD
+  - Talks
+
 # plugins
 plugins:
   - jekyll-github-metadata
