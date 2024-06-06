@@ -22,3 +22,11 @@ strava_user: patrick_roddy
 # disable redirects.json
 redirect_from:
   json: false
+
+# plugins
+plugins:
+  - jekyll-github-metadata
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
