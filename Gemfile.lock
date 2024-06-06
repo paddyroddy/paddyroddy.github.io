@@ -10,12 +10,10 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    faraday (2.9.0)
+    faraday (2.9.1)
       faraday-net_http (>= 2.0, < 3.2)
     faraday-net_http (3.1.0)
       net-http
-    faraday-retry (2.2.1)
-      faraday (~> 2.0)
     ffi (1.17.0)
     ffi (1.17.0-aarch64-linux-gnu)
     ffi (1.17.0-aarch64-linux-musl)
@@ -79,6 +77,8 @@ GEM
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
       jekyll (>= 3.8, < 5.0)
+    jekyll-sitemap (1.4.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -192,12 +192,12 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  faraday-retry (~> 2)
   jekyll (~> 4)
   jekyll-github-metadata (~> 2)
   jekyll-redirect-from (~> 0)
   jekyll-remote-theme (~> 0)
   jekyll-seo-tag (~> 2)
+  jekyll-sitemap (~> 1)
 
 BUNDLED WITH
    2.5.11
