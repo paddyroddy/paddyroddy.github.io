@@ -8,8 +8,8 @@ redirect_from: /Code
 <article class="code">
   <div>
     {% if jekyll.environment == "production" %} {% assign public_repos =
-    site.github.public_repositories | sort: "pushed_at" | reverse %} {% for repo
-    in public_repos %}
+    site.github.public_repositories | where_exp: "repo", "repo.archived ==
+    false" | sort: "pushed_at" | reverse %} {% for repo in public_repos %}
     <h1><a href="{{ repo.html_url }}" target="_blank"> {{ repo.name }} </a></h1>
     <h4>{{ repo.description }}</h4>
     {% if repo.language %} {{ repo.language }} {% endif %}
