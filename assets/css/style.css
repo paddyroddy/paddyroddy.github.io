@@ -313,21 +313,27 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --main-color: #b5e853;
+  --hover-color: forestgreen;
+}
+
+/* General */
 a,
 a:visited {
   text-decoration: none;
-  color: #b5e853;
+  color: var(--main-color);
   position: relative;
   z-index: 9999;
 }
 
 a:hover,
 a:focus {
-  color: forestgreen;
+  color: var(--hover-color);
 }
 
 b {
-  color: #b5e853;
+  color: var(--main-color);
 }
 
 header {
@@ -367,7 +373,7 @@ ul li {
 .icons-social i {
   font-size: 3em;
   padding: 10px;
-  color: #b5e853;
+  color: var(--main-color);
 }
 
 /* index.html */
@@ -387,6 +393,8 @@ ul li {
 
 .profile-pic {
   border-radius: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* code.html */
@@ -396,7 +404,9 @@ ul li {
 
 /* running.html */
 .running-pic {
-  width: 67%;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
 /* 404.html */
@@ -410,11 +420,30 @@ ul li {
 }
 
 @media only screen and (max-width: 40em) {
+  /* General */
   tr {
     text-align: center;
   }
   td {
-    display: inline-block;
+    display: block;
+    /* Override inline width */
+    width: 100% !important;
+  }
+  /* about.html */
+  #left {
+    margin-bottom: 1em;
+  }
+  .profile-pic {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  /* running.html */
+  .running-pic {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1em;
+    display: block;
   }
 }
 
