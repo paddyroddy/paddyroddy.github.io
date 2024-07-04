@@ -3,6 +3,8 @@
 
 @import "{{ site.theme }}";
 
+/* General */
+
 a,
 a:visited {
   text-decoration: none;
@@ -109,6 +111,8 @@ ul li {
 }
 
 @media only screen and (max-width: 40em) {
+  /* General */
+
   tr {
     text-align: center;
   }
@@ -118,6 +122,8 @@ ul li {
     /* Override inline width */
     width: 100% !important;
   }
+
+  /* about.html */
 
   #left {
     margin-bottom: 1em;
