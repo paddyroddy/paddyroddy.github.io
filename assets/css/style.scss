@@ -3,23 +3,28 @@
 
 @import "{{ site.theme }}";
 
+:root {
+  --main-color: #b5e853;
+  --hover-color: forestgreen;
+}
+
 /* General */
 
 a,
 a:visited {
   text-decoration: none;
-  color: #b5e853;
+  color: var(--main-color);
   position: relative;
   z-index: 9999;
 }
 
 a:hover,
 a:focus {
-  color: forestgreen;
+  color: var(--hover-color);
 }
 
 b {
-  color: #b5e853;
+  color: var(--main-color);
 }
 
 header {
@@ -61,7 +66,7 @@ ul li {
 .icons-social i {
   font-size: 3em;
   padding: 10px;
-  color: #b5e853;
+  color: var(--main-color);
 }
 
 /* index.html */
