@@ -81,6 +81,8 @@ ul li {
 
 .profile-pic {
   border-radius: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* code.html */
@@ -112,6 +114,18 @@ ul li {
   }
 
   td {
-    display: inline-block;
+    display: block;
+    /* Override inline width */
+    width: 100% !important;
+  }
+
+  #left {
+    margin-bottom: 1em;
+  }
+
+  .profile-pic {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
   }
 }
