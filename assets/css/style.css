@@ -379,14 +379,7 @@ ul li {
 /* index.html */
 .intro {
   text-align: center;
-  padding: 20px;
-}
-
-.intro-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  margin: 15% 0 0 0;
 }
 
 /* about.html */
@@ -435,10 +428,6 @@ ul li {
     display: block;
     /* Override inline width */
     width: 100% !important;
-  }
-  /* index.html */
-  .intro {
-    padding: 10px;
   }
   /* about.html */
   #left {
