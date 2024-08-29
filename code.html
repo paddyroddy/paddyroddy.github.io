@@ -11,7 +11,7 @@ redirect_from: /Code
     site.github.public_repositories | where_exp: "repo", "repo.archived == false
     and repo.fork == false" | sort: "pushed_at" | reverse %} {% for repo in
     public_repos %}
-    <h1><a href="{{ repo.html_url }}" target="_blank"> {{ repo.name }} </a></h1>
+    <h1><a href="{{ repo.html_url }}"> {{ repo.name }} </a></h1>
     <h4>{{ repo.description }}</h4>
     {% if repo.language %} {{ repo.language }} {% endif %}
     <i class="fas fa-star pl-md-2" aria-hidden="true"></i> {{
