@@ -1,0 +1,14 @@
+[type.json]
+extend-ignore-re = [
+    "\"(?:\\w*)?(C|c)olor\":\\s\\{",
+]
+
+[type.scss]
+extend-glob = [
+    "*.scss",
+]
+extend-ignore-re = [
+    "--(hover|main)-color",
+    "\\w:\\scenter;",
+    "color:\\s\\w",
+]
