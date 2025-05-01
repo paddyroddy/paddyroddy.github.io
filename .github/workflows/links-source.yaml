@@ -1,5 +1,5 @@
 ---
-name: Links
+name: Link Check Source
 
 on:
   push:
@@ -14,6 +14,7 @@ jobs:
     timeout-minutes: 2
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/links@2c3c2af027931abafe465d0652a73a4e3dba0b74 # v0
+      - uses: paddyroddy/.github/actions/links@aa8df277332c6d3c6f07654393736d9183ab9a8b # v0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          lychee-args: --exclude '%7B%7B%20.*?' --no-progress --verbose .
