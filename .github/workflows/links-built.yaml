@@ -3,7 +3,7 @@ name: Link Check Built Pages
 
 on:
   schedule:
-    - cron: 0 9 * * *
+    - cron: 0 9 1 * *
   workflow_dispatch:
 
 jobs:
