@@ -19,5 +19,5 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           lychee-args:
             --exclude '%7B%7B%20.*?' --exclude
-            'https://scholar.google.com/citations(?:\?user=%7B%7B%20.*?%20%7D%7D)?'
-            --no-progress --verbose .
+            'https://scholar.google.com/citations\?user=.*' --no-progress
+            --verbose .
