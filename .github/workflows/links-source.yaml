@@ -17,6 +17,4 @@ jobs:
       - uses: paddyroddy/.github/actions/links@239340ab15e2c96523fba82cb55a509f0a3b0b27 # v0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          lychee-args:
-            --exclude '%7B%7B%20.*?' --exclude 'https:\/\/scholar\.'
-            --no-progress --verbose .
+          lychee-args: --exclude '%7B%7B%20.*?' --no-progress --verbose .
