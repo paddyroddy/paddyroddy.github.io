@@ -16,3 +16,6 @@ jobs:
         with:
           branch: gh-pages
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          lychee-args:
+            --exclude 'https://scholar.google.com/citations\?user=.*'
+            --no-progress --verbose .
