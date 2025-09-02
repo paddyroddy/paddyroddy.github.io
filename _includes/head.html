@@ -55,7 +55,11 @@
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-    gtag("set", { cookie_flags: "SameSite=None;Secure" });
+    gtag("consent", "default", {
+      ad_storage: "denied",
+      analytics_storage: "denied",
+    });
+
     gtag("config", "{{ site.google_measurement | cgi_escape | escape }}");
   </script>
   {% endif %} {% seo %}
