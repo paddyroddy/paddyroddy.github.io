@@ -10,7 +10,7 @@
   <!-- Custom CSS -->
   <link
     rel="stylesheet"
-    href="/assets/css/style.css?v=a20cef10fabbfe8a6606966660a725c60b86f81a"
+    href="/assets/css/style.css?v=2da60611038e4efa842af58b540a22d8cf65c15b"
   />
   <!-- Font Awesome -->
   <link
@@ -57,7 +57,11 @@
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-    gtag("set", { cookie_flags: "SameSite=None;Secure" });
+    gtag("consent", "default", {
+      ad_storage: "denied",
+      analytics_storage: "denied",
+    });
+
     gtag("config", "G-V1RQT88SBL");
   </script>
    <!-- Begin Jekyll SEO tag v2.8.0 -->
