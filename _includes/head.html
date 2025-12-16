@@ -43,24 +43,12 @@
     var arxiv_includeTitle = 0;
     var arxiv_includeSummary = 1;
   </script>
-  <!-- Google Analytics -->
+  <!-- GoatCounter -->
   {% if jekyll.environment == "production" %}
   <script
     async
-    src="https://www.googletagmanager.com/gtag/js?id={{ site.google_measurement | cgi_escape | escape }}"
+    data-goatcounter="https://paddyroddy.goatcounter.com/count"
+    src="//gc.zgo.at/count.js"
   ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("consent", "default", {
-      ad_storage: "denied",
-      analytics_storage: "denied",
-    });
-
-    gtag("config", "{{ site.google_measurement | cgi_escape | escape }}");
-  </script>
   {% endif %} {% seo %}
 </head>
