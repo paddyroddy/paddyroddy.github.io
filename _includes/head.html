@@ -47,7 +47,7 @@
   {% if jekyll.environment == "production" %}
   <script
     async
-    data-goatcounter="https://{{ site.goatcounter_site }}.goatcounter.com/count"
+    data-goatcounter="https://{{ site.goatcounter_site | cgi_escape | escape }}.goatcounter.com/count"
     src="//gc.zgo.at/count.js"
   ></script>
   {% endif %} {% seo %}
