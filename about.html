@@ -52,7 +52,7 @@ redirect_from: /About
           <a
             href="mailto:{{ site.email | replace: ' (at) ', '@' | replace: ' (dot) ', '.' }}"
             rel="noopener noreferrer"
-            ><i class="fa fa-fw fa-envelope"></i> {{ site.email }}</a
+            ><i class="fa fa-fw fa-envelope"></i> {{ site.email | escape }}</a
           >
         </p>
       </td>
