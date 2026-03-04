@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@use "{{ site.theme }}";
 
 :root {
   --main-color: #b5e853;
