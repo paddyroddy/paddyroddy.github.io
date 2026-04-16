@@ -13,7 +13,7 @@ jobs:
     env:
       BUNDLE_GEMFILE: ${{ github.workspace }}/Gemfile
     permissions:
-      contents: write
+      contents: read
     runs-on: ubuntu-slim
     steps:
       # yamllint disable-line rule:line-length
