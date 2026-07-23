@@ -1,33 +1,33 @@
 <head>
   <title>{{ site.title }}</title>
   <!-- Human -->
-  <link rel="human-json" href="/human.json" />
+  <link href="/human.json" rel="human-json" />
   <!-- Custom CSS -->
   <link
-    rel="stylesheet"
     href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
+    rel="stylesheet"
   />
   <!-- Font Awesome -->
   <link
-    rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    rel="stylesheet"
   />
   <!-- Google Verification -->
   <meta
-    name="google-site-verification"
     content="{{ site.google_verification | cgi_escape | escape }}"
+    name="google-site-verification"
   />
   <!-- Icon -->
   <link
-    rel="icon"
     href="{{ '/assets/images/favicon.ico' | relative_url }}"
+    rel="icon"
     type="image/x-icon"
   />
   <!-- Metadata -->
   <meta charset="utf-8" />
   <meta
-    name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    name="viewport"
   />
   <!-- particles.js -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles/dist/tsparticles.min.js"></script>
@@ -36,9 +36,9 @@
   <script type="text/javascript">
     var arxiv_authorid = "roddy_p_1";
     var arxiv_format = "arxiv";
-    var arxiv_max_entries = 0;
-    var arxiv_includeTitle = 0;
     var arxiv_includeSummary = 1;
+    var arxiv_includeTitle = 0;
+    var arxiv_max_entries = 0;
   </script>
   <!-- GoatCounter -->
   {% if jekyll.environment == "production" %}
