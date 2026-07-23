@@ -1,0 +1,18 @@
+{
+  "url": "https://paddyroddy.github.io",
+  "version": "0.1.1",
+  "vouches": [
+    {
+      "url": "https://paddyroddy.github.io/blog",
+      "vouched_at": "2026-07-23"
+    },
+    {
+      "url": "https://paddyroddy.github.io/posters",
+      "vouched_at": "2026-07-23"
+    },
+    {
+      "url": "https://paddyroddy.github.io/talks",
+      "vouched_at": "2026-07-23"
+    }
+  ]
+}
