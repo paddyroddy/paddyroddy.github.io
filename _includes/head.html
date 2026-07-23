@@ -1,7 +1,7 @@
 <head>
   <title>{{ site.title }}</title>
   <!-- Human -->
-  <link href="/human.json" rel="human-json" />
+  <link href="{{ '/human.json' | relative_url }}" rel="human-json" />
   <!-- Custom CSS -->
   <link
     href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
