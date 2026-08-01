@@ -1,6 +1,6 @@
 ---
 repos:
   - repo: https://github.com/paddyroddy/.github
-    rev: v0.423.0
+    rev: v0.435.0
     hooks:
       - id: general-hooks
